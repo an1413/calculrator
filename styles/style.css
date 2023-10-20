@@ -3,13 +3,24 @@
   background-color: #000;
   margin: 0 auto;
   font-size: 31px;
-  padding: 0px 19px 16px 21px;
+}
+
+#input {
+  background-color: transparent;
+  color: #fff;
+  margin-top: 92px;
+  margin-bottom: 17px;
+  font-size: 85px;
+  width: 380px;
+  text-align: right;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  row-gap: 11px;
+  padding: 0px 17px 14px 19px;
+  place-items: center;
 }
 
 button {
@@ -31,4 +42,11 @@ button {
 .Arithmetic {
   background-color: #FE9E0B;
   color: #fff;
+}
+
+.zero {
+  width: 170px;
+  grid-column: span 2;
+  padding-left: 37px;
+  justify-content: start;
 }
