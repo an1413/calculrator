@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>계산기</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,29 +16,34 @@
 
   <body>
     <div class="calculator_wrapper">
-      <input type="number" value="302.481" id="input">
-      <div class="buttons">
-        <button class="grey-btn">AC</button>
-        <button class="grey-btn">+/-</button>
-        <button class="grey-btn"><- </button>
-            <button class="Arithmetic">/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="Arithmetic">X</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="Arithmetic">-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="Arithmetic">+</button>
-            <button class="zero">0</button>
-            <button>.</button>
-            <button>=</button>
-      </div>
+      <form action="">
+        <input type="text" value="302,481" id="input">
+      </form>
+      <!-- Grid Container 정의 -->
+      <form class="buttons">
+        <!-- Grid Items 정의 -->
+        <input class="grey-btn clear" type="button" value="AC">
+        <input type="button" class="grey-btn" value="+/-">
+        <input type="button" class="grey-btn" value="%">
+        <input type="button" class="operator" value="/">
+        <input type="button" value="7">
+        <input type="button" value="8">
+        <input type="button" value="9">
+        <input type="button" class="operator" value="X">
+        <input type="button" value="4">
+        <input type="button" value="5">
+        <input type="button" value="6">
+        <input type="button" class="operator" value="-">
+        <input type="button" value="1">
+        <input type="button" value="2">
+        <input type="button" value="3">
+        <input type="button" class="operator" value="+">
+        <input type="button" class="zero" value="0">
+        <input type="button" value=".">
+        <input type="button" class="operator result" value="=">
+      </form>
     </div>
+    <script src="./js/calculator.js"></script>
   </body>
 
 </html>

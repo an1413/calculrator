@@ -8,7 +8,7 @@
 #input {
   background-color: transparent;
   color: #fff;
-  margin-top: 92px;
+  padding-top: 92px;
   margin-bottom: 17px;
   font-size: 85px;
   width: 380px;
@@ -17,13 +17,13 @@
 
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* 명시적 열(Track)의 크기를 정의 */
   row-gap: 11px;
   padding: 0px 17px 14px 19px;
-  place-items: center;
+  place-items: center; /* align-items와 justify-items의 단축 속성 */
 }
 
-button {
+input, .grey-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@ button {
   color: #111111;
 }
 
-.Arithmetic {
+.operator {
   background-color: #FE9E0B;
   color: #fff;
 }
