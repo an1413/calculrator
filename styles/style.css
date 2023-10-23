@@ -5,7 +5,7 @@
   font-size: 31px;
 }
 
-#input {
+#output {
   background-color: transparent;
   color: #fff;
   padding-top: 92px;
@@ -34,14 +34,26 @@ input, .grey-btn {
   border-radius: 50px;
 }
 
+input:hover {
+  cursor: pointer;
+  background-color: #737373;
+  transition: background-color 0.5s;
+}
+
 .grey-btn {
   background-color: #A5A5A5;
   color: #111111;
+  &:hover {
+    background-color: rgb(199, 191, 191);
+  }
 }
 
 .operator {
   background-color: #FE9E0B;
   color: #fff;
+  &:hover {
+    background-color: #f3b75d;
+  }
 }
 
 .zero {
