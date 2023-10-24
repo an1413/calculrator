@@ -2,10 +2,14 @@ const $reset_btn = document.querySelector('.clear');
 const $btns = document.querySelector('.buttons');
 const $output = document.querySelector('#output');
 const output_arr = []; // 저장하기
+let fontfont = false;
 
 // btn 클릭시 작동되는 함수
 $btns.addEventListener('click', (e) => {
   let what_btn = e.target.value;
+  fontsize_if();
+  font_change();
+
   if (what_btn === "=") {
     try {
       // 결과 계산 및 출력
@@ -22,6 +26,7 @@ $btns.addEventListener('click', (e) => {
     // AC 버튼 클릭 시 초기화
     $output.value = "0";
     output_arr.length = 0;
+    fontfont = false;
   } else if (what_btn === "+/-") {
     // +/- 버튼을 누를 때 부호 변경
     if (output_arr.length > 0) {
@@ -37,3 +42,19 @@ $btns.addEventListener('click', (e) => {
     $output.value = output_arr.join('');
   }
 });
+
+// font 길이 점검 함수
+function fontsize_if() {
+  if($output.value.length > 7){
+    console.log("글씨조절");
+    fontfont = true;
+  }
+  return fontfont;
+}
+
+// font 크기 변경 함수
+function font_change(){
+  if(fontfont) {
+    $output.style.fontSize = '42px';
+  }
+}
